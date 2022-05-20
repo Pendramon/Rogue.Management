@@ -7,10 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="StyleCop.Analyzers.Unstable" Version="1.2.0.435">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.18.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rogue.Management.Data.Model\Rogue.Management.Data.Model.csproj" />
+    <ProjectReference Include="..\Rogue.Management.Data\Rogue.Management.Data.csproj" />
+    <ProjectReference Include="..\Rogue.Management.View.Model\Rogue.Management.View.Model.csproj" />
   </ItemGroup>
 
 </Project>

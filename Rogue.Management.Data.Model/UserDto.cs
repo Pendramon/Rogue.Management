@@ -1,8 +1,8 @@
-﻿namespace Rogue.Data.Model
+﻿namespace Rogue.Management.Data.Model
 {
-    public class User
+    public class UserDto
     {
-        public User(string username, string email, string passwordHash, DateTime createdAt)
+        public UserDto(string username, string email, string passwordHash, DateTime createdAt)
         {
             this.Username = username;
             this.Email = email;
@@ -19,5 +19,7 @@
         public string PasswordHash { get; set; }
 
         public DateTime CreatedAt { get; set; }
+
+        public List<ProjectDto>? Projects { get; set; }
     }
 }
